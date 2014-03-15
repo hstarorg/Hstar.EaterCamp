@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "..\Framework\Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework.Test", "..\Framework\Hstar.Framework.Test\Hstar.Framework.Test.csproj", "{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework.Test", "Hstar.Framework.Test\Hstar.Framework.Test.csproj", "{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10-测试类项目", "10-测试类项目", "{6D274A89-7F27-4918-849E-C8F76F47FD97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
 	EndGlobalSection
 EndGlobal
