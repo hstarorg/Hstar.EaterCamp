@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac>
+  <components>
+    <component type="Hstar.Framework.Test.Ioc.Fun2,Hstar.Framework.Test" service="Hstar.Framework.Test.Ioc.IFun,Hstar.Framework.Test" />
+  </components>
+</autofac>
