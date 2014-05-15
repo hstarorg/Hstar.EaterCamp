@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Classes" xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--配置你的实体类的别名，一般的都是一个实体类对应一个xml-->
+  <!--<alias>
+    <typeAlias alias="attendanceSheet" type="CounselorSystemModel.AttendanceSheet,CounselorSystemModel" />
+    <typeAlias alias="counselorBasicInformation" type="CounselorSystemModel.CounselorBasicInformation,CounselorSystemModel" />
+    <typeAlias alias="dailyManagementWorksheet" type="CounselorSystemModel.DailyManagementWorksheet,CounselorSystemModel" />
+    <typeAlias alias="partyBuildingWork" type="CounselorSystemModel.PartyBuildingWork,CounselorSystemModel" />
+    <typeAlias alias="passwordManagemen" type="CounselorSystemModel.PasswordManagemen,CounselorSystemModel" />
+    <typeAlias alias="studentAchievement" type="CounselorSystemModel.StudentAchievement,CounselorSystemModel" />
+    <typeAlias alias="studentJob" type="CounselorSystemModel.StudentJob,CounselorSystemModel" />
+    <typeAlias alias="studentsBasicInformation" type="CounselorSystemModel.StudentsBasicInformation,CounselorSystemModel" />
+    <typeAlias alias="studentsLeave" type="CounselorSystemModel.StudentsLeave,CounselorSystemModel" />
+    <typeAlias alias="studentStudy" type="CounselorSystemModel.StudentStudy,CounselorSystemModel" />
+  </alias>-->
+  <statements>
+    <select id="test" resultClass="int">
+      <![CDATA[
+       SELECT COUNT(0) FROM V3Users
+      ]]>
+    </select>
+  </statements>
+</sqlMap>

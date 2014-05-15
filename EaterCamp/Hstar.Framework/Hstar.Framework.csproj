@@ -45,11 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extension\EnumExtension.cs" />
+    <Compile Include="Extension\ObjectExtention.cs" />
     <Compile Include="Ioc\AutofacHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\CacheKit.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extension\" />
+    <Folder Include="Config\Log4net\" />
     <Folder Include="Log\" />
   </ItemGroup>
   <ItemGroup>
