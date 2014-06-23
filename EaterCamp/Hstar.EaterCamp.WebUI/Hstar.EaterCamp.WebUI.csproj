@@ -230,6 +230,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="providers.config" />
+    <Content Include="Scripts\Plugins\Html5\html5shiv-printshiv.js" />
+    <Content Include="Scripts\Plugins\Html5\html5shiv-printshiv.min.js" />
+    <Content Include="Scripts\Plugins\Html5\html5shiv.js" />
+    <Content Include="Scripts\Plugins\Html5\html5shiv.min.js" />
+    <Content Include="Scripts\Plugins\Html5\respond.min.js" />
+    <Content Include="Scripts\Plugins\Html5\respond.src.js" />
     <Content Include="SqlMap.config" />
     <None Include="Config\SqlMap\SqlMap.xsd">
       <SubType>Designer</SubType>
@@ -304,7 +310,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

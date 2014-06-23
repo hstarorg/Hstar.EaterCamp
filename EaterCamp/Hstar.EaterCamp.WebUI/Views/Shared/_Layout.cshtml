@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 吃货集中营</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="~/Scripts/Plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Scripts/Plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    @Styles.Render("~/Scripts/Plugins/bootstrap/css/css")
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="~/Scripts/Plugins/Html5/html5shiv.min.js"></script>
+    <script src="~/Scripts/Plugins/Html5/respond.min.js"></script>
     <![endif]-->
-    @RenderSection("styles", false)
+    @RenderSection("HeadPartialSection", false)
 </head>
 <body>
     <header>
@@ -40,8 +40,7 @@
             底部
         </div>
     </footer>
-    @Scripts.Render("~/bundles/jquery")
-    <script src="~/Scripts/Plugins/bootstrap/js/bootstrap.min.js"></script>
-    @RenderSection("scripts", false)
+    @Scripts.Render("~/bundles/jquery","~/bundles/bootstrap")
+    @RenderSection("FootPartialSection", false)
 </body>
 </html>
