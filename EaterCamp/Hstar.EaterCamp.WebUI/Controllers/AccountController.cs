@@ -1,14 +1,29 @@
 ﻿using Hstar.EaterCamp.WebUI.Filters;
 using Microsoft.Web.WebPages.OAuth;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Security;
 
 namespace Hstar.EaterCamp.WebUI.Controllers
 {
-    [Authorize]
-    [InitializeSimpleMembership]
-    public class AccountController : Controller
+    //[Authorize]
+    //[InitializeSimpleMembership]
+    public class AccountController : BaseController
     {
+        #region 登录
+
+        /// <summary>
+        /// 登录页面
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public Task<ActionResult> Login()
+        {
+            return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
+        }
+
+        #endregion 登录
+
         #region 帮助程序
 
         private ActionResult RedirectToLocal(string returnUrl)

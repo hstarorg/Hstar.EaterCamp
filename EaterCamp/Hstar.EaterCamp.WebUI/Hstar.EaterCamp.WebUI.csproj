@@ -163,6 +163,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -318,6 +319,10 @@
     <ProjectReference Include="..\..\..\CSharp-Framework\Hstar.Framework\Hstar.Framework.csproj">
       <Project>{4287384d-4f41-4528-8c16-dc9ef33be669}</Project>
       <Name>Hstar.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hstar.EaterCamp.Models\Hstar.EaterCamp.Models.csproj">
+      <Project>{367b6f6a-cde8-4a48-93a7-3ef2c51aa7db}</Project>
+      <Name>Hstar.EaterCamp.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
