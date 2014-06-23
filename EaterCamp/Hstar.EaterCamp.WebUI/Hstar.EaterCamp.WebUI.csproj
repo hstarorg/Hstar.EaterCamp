@@ -171,7 +171,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\IBatis4Net\Sqlmap\Common.xml" />
+    <Content Include="Config\SqlMap\Common.xml" />
+    <Content Include="Config\SqlMap\Home.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -230,6 +231,12 @@
     <Content Include="Global.asax" />
     <Content Include="providers.config" />
     <Content Include="SqlMap.config" />
+    <None Include="Config\SqlMap\SqlMap.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Config\SqlMap\SqlMapConfig.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\Plugins\jQueryValidate\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.min.js" />
