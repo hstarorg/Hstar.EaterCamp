@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework.Test", "Hstar.Framework.Test\Hstar.Framework.Test.csproj", "{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-测试类项目", "3-测试类项目", "{6D274A89-7F27-4918-849E-C8F76F47FD97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-业务类项目", "1-业务类项目", "{7BFDFD0C-5864-471D-B7BD-705E3BBE078F}"
@@ -15,20 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.WebUI", "Hs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.WebUI.Tests", "Hstar.EaterCamp.WebUI.Tests\Hstar.EaterCamp.WebUI.Tests.csproj", "{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "..\..\CSharp-Framework\Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,14 +29,17 @@ Global
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2B8702D3-DDCD-48E7-A4A5-BAB666B6EB16} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
+		{4287384D-4F41-4528-8C16-DC9EF33BE669} = {0FE1FEE8-FEE2-4D0E-9CC4-615E0C03C94C}
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
-		{4287384D-4F41-4528-8C16-DC9EF33BE669} = {0FE1FEE8-FEE2-4D0E-9CC4-615E0C03C94C}
 	EndGlobalSection
 EndGlobal

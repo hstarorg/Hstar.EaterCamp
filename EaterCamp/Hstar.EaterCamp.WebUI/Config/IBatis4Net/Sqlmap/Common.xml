@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Classes" xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--配置你的实体类的别名，一般的都是一个实体类对应一个xml-->
+  <statements>
+    <select id="test" resultClass="int">
+      <![CDATA[
+       SELECT COUNT(0) FROM V3Users
+      ]]>
+    </select>
+  </statements>
+</sqlMap>

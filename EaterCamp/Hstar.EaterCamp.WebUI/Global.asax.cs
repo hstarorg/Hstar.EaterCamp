@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Hstar.Framework.IBatis4Net;
 
 namespace Hstar.EaterCamp.WebUI
 {
@@ -19,6 +20,9 @@ namespace Hstar.EaterCamp.WebUI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //系统初始化
+            SqlMapperHelper.InitMapper();
         }
     }
 }
