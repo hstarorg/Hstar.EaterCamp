@@ -21,7 +21,7 @@ namespace Hstar.EaterCamp.WebUI
                         "~/Scripts/Plugins/jQueryUI/jquery-ui-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                "~/Scripts/Plugins/jquery.validate*",
+                "~/Scripts/Plugins/jQueryValidate/jquery.validate*",
                 "~/Scripts/Plugins/jQueryValidate/jquery.unobtrusive*",
                 "~/Scripts/Plugins/jQueryAjax/jquery.unobtrusive*"));
 
