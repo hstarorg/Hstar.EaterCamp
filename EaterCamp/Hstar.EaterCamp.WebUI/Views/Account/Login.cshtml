@@ -3,7 +3,10 @@
 @{
     ViewBag.Title = "登录";
 }
-
+@section FootPartialSection
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
 <hgroup class="title">
     <h1>@ViewBag.Title.</h1>
 </hgroup>
@@ -14,7 +17,6 @@
     {
         @Html.AntiForgeryToken()
         @Html.ValidationSummary(true)
-
         <fieldset>
             <legend>“登录”表单</legend>
             <ol>

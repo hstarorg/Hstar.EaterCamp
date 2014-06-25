@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac>
+  <components>
+    <component type="【实例类型，如Hstar.Framework.Test.Ioc.Fun2,Hstar.Framework.Test】" service="【接口类型，如Hstar.Framework.Test.Ioc.IFun,Hstar.Framework.Test】" />
+  </components>
+</autofac>
