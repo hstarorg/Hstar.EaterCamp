@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Hstar.Framework.IBatis4Net;
+using Hstar.EaterCamp.Models.Account;
 
 namespace Hstar.EaterCamp.WebUI.Controllers
 {

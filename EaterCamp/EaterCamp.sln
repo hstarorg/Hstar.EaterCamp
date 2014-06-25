@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.WebUI", "Hs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.WebUI.Tests", "Hstar.EaterCamp.WebUI.Tests\Hstar.EaterCamp.WebUI.Tests.csproj", "{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "..\..\CSharp-Framework\Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.Models", "Hstar.EaterCamp.Models\Hstar.EaterCamp.Models.csproj", "{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Framework", "..\..\CSharp-Framework\Hstar.Framework\Hstar.Framework.csproj", "{4287384D-4F41-4528-8C16-DC9EF33BE669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,22 +31,22 @@ Global
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.Build.0 = Release|Any CPU
 		{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4287384D-4F41-4528-8C16-DC9EF33BE669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4287384D-4F41-4528-8C16-DC9EF33BE669} = {0FE1FEE8-FEE2-4D0E-9CC4-615E0C03C94C}
 		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
 		{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
+		{4287384D-4F41-4528-8C16-DC9EF33BE669} = {0FE1FEE8-FEE2-4D0E-9CC4-615E0C03C94C}
 	EndGlobalSection
 EndGlobal
