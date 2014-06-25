@@ -3,9 +3,9 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!--配置你的实体类的别名，一般的都是一个实体类对应一个xml-->
   <statements>
-    <select id="test1" resultClass="string">
+    <select id="test1111" resultClass="int">
       <![CDATA[
-       SELECT 'abc'
+       SELECT COUNT(0) FROM V3Users
       ]]>
     </select>
   </statements>

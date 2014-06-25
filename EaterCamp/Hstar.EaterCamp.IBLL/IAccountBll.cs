@@ -2,6 +2,6 @@
 {
     public interface IAccountBll
     {
-
+        string GetTest();
     }
 }

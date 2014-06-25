@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\Autofac\AutofacConfig.xml" />
+    <Content Include="Config\SqlMap\Account.xml" />
     <Content Include="Config\SqlMap\Common.xml" />
     <Content Include="Config\SqlMap\Home.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -325,9 +326,17 @@
       <Project>{11f8331b-105d-4f0e-8e12-783a8e51eceb}</Project>
       <Name>Hstar.EaterCamp.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Hstar.EaterCamp.DAL\Hstar.EaterCamp.DAL.csproj">
+      <Project>{bf4c42c5-2d24-4d57-a14c-9d4a106d1800}</Project>
+      <Name>Hstar.EaterCamp.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hstar.EaterCamp.IBLL\Hstar.EaterCamp.IBLL.csproj">
       <Project>{00a5b230-6dbe-4853-813a-99000f7157d5}</Project>
       <Name>Hstar.EaterCamp.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hstar.EaterCamp.IDAL\Hstar.EaterCamp.IDAL.csproj">
+      <Project>{4ad5b177-1fac-4f37-b7fb-87e9ef129fb9}</Project>
+      <Name>Hstar.EaterCamp.IDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hstar.EaterCamp.Models\Hstar.EaterCamp.Models.csproj">
       <Project>{367b6f6a-cde8-4a48-93a7-3ef2c51aa7db}</Project>

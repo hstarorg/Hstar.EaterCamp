@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <autofac>
   <components>
-    <component type="【实例类型，如Hstar.Framework.Test.Ioc.Fun2,Hstar.Framework.Test】" service="【接口类型，如Hstar.Framework.Test.Ioc.IFun,Hstar.Framework.Test】" />
+    <!--【业务逻辑层依赖注入】-->
+    <component type="Hstar.EaterCamp.BLL.AccountBll,Hstar.EaterCamp.BLL" service="Hstar.EaterCamp.IBLL.IAccountBll,Hstar.EaterCamp.IBLL" />
+    <!--【数据访问层依赖注入】-->
+    <component type="Hstar.EaterCamp.DAL.AccountDal,Hstar.EaterCamp.DAL" service="Hstar.EaterCamp.IDAL.IAccountDal,Hstar.EaterCamp.IDAL" />
   </components>
 </autofac>
