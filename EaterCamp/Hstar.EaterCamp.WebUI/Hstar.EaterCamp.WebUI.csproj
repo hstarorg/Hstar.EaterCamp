@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\Autofac\AutofacConfig.xml" />
+    <Content Include="Config\SqlMap\Account.xml" />
     <Content Include="Config\SqlMap\Common.xml" />
     <Content Include="Config\SqlMap\Home.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

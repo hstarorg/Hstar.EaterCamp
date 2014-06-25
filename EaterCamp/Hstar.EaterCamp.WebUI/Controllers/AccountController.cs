@@ -27,6 +27,7 @@ namespace Hstar.EaterCamp.WebUI.Controllers
         [HttpGet]
         public Task<ActionResult> Login()
         {
+            ViewBag.Test = accountBll.GetTest();
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
 

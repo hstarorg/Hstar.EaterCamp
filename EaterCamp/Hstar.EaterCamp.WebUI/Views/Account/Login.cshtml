@@ -12,7 +12,7 @@
 </hgroup>
 
 <section id="loginForm">
-    <h2>使用本地帐户登录。</h2>
+    <h2>使用本地帐户登录。@ViewBag.Test</h2>
     @using (Html.BeginForm(new { ViewBag.ReturnUrl }))
     {
         @Html.AntiForgeryToken()
