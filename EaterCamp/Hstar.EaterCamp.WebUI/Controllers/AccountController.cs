@@ -1,4 +1,5 @@
-﻿using Hstar.EaterCamp.WebUI.Filters;
+﻿using Hstar.EaterCamp.IBLL;
+using Hstar.Framework.Ioc;
 using Microsoft.Web.WebPages.OAuth;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -10,6 +11,13 @@ namespace Hstar.EaterCamp.WebUI.Controllers
     //[InitializeSimpleMembership]
     public class AccountController : BaseController
     {
+        private readonly IAccountBll accountBll;
+
+        public AccountController()
+        {
+            accountBll = AutofacHelper.GetInstance<IAccountBll>();
+        }
+
         #region 登录
 
         /// <summary>
