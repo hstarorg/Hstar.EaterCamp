@@ -108,7 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hstar.EaterCamp.WebUI\Hstar.EaterCamp.WebUI.csproj">
-      <Project>{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A}</Project>
+      <Project>{b2bc71e4-8c73-4c25-9e02-924fcdc4e04a}</Project>
       <Name>Hstar.EaterCamp.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
