@@ -232,7 +232,26 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\business\barbecue.jpg" />
+    <Content Include="Images\business\chicken.jpg" />
+    <Content Include="Images\business\EatingFlish.jpg" />
+    <Content Include="Images\business\PlayBasketball.jpg" />
+    <Content Include="Images\business\PlayPai.jpg" />
+    <Content Include="Images\business\PlaySong.jpg" />
+    <Content Include="Images\business\visitMuseum.jpg" />
+    <Content Include="Images\business\WalkPlay.jpg" />
+    <Content Include="Images\icon\icon_v140619.png" />
+    <Content Include="Images\login\bg_v130808.jpg" />
+    <Content Include="Images\login\btn_v140403.png" />
+    <Content Include="Images\login\login.png" />
+    <Content Include="Images\login\login_logo_v130808.png" />
+    <Content Include="Images\login\login_logo_v1308081.png" />
+    <Content Include="Style\hacks.css" />
+    <Content Include="Style\main.min.css" />
+    <Content Include="Style\page.min.css" />
     <Content Include="providers.config" />
+    <Content Include="Scripts\Login\common.js" />
+    <Content Include="Scripts\Login\login.js" />
     <Content Include="Scripts\Plugins\Html5\html5shiv-printshiv.js" />
     <Content Include="Scripts\Plugins\Html5\html5shiv-printshiv.min.js" />
     <Content Include="Scripts\Plugins\Html5\html5shiv.js" />
@@ -313,6 +332,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\tips\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
