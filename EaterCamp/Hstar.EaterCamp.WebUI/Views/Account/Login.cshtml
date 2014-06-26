@@ -1,14 +1,8 @@
 ﻿@model Hstar.EaterCamp.Models.Account.UserAccount
 @{
-    Layout="~/Views/Shared/_LoginPartial.cshtml";
+    Layout = null;
 }
-<!--[if IE 9]><html class="ie9"><![endif]-->
-<!--[if IE 8]><html class="ie8"><![endif]-->
-<!--[if IE 7]><html class="ie7"><![endif]-->
-<!--[if IE 6]><html class="ie6"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html>
-<!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>吃货_中国唯一免费的小型娱乐吃货交流社区</title>
@@ -17,20 +11,6 @@
     <!--[if lt IE 10]><link rel="stylesheet" href="~/Style/hacks.css" /><![endif]-->
     <!--[if lt IE 9]> <script type="text/javascript"> (function (){ var tag = ['section','header','footer','nav','hgroup','article','aside'],i=0; for(i in tag){ document.createElement(tag[i]); } })();</script><![endif]-->
     <script type="text/javascript">
-        (function () {
-            var reg_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
-            var u = navigator.userAgent;
-            var is_m = function () {
-                var linux = u.indexOf('Linux') > -1;
-                var result = reg_match.test(u);
-                var width = window.screen.width;
-                if (result || u == null) { return true; }
-                if (linux && width < 1024) { return true; } else { return false; }
-            }();
-            if (is_m) {
-                document.location.href = '/3g';
-            }
-        })();
         try { document.execCommand("BackgroundImageCache", false, true); } catch (e) { }
     </script>
 </head>
