@@ -1,4 +1,7 @@
 ﻿@model Hstar.EaterCamp.Models.Account.UserAccount
+@{
+    Layout="~/Views/Shared/_LoginPartial.cshtml";
+}
 <!--[if IE 9]><html class="ie9"><![endif]-->
 <!--[if IE 8]><html class="ie8"><![endif]-->
 <!--[if IE 7]><html class="ie7"><![endif]-->
@@ -37,7 +40,7 @@
             <ul class="login-user-list js-userList">
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/chicken.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/chicken.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -48,7 +51,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/WalkPlay.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/WalkPlay.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -59,7 +62,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/visitMuseum.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/visitMuseum.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -70,7 +73,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/barbecue.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/barbecue.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -81,7 +84,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/PlayBasketball.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/PlayBasketball.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -92,7 +95,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/PlaySong.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/PlaySong.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -103,7 +106,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/EatingFlish.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/EatingFlish.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -114,7 +117,7 @@
                 </li>
                 <li>
                     <div class="login-user-item js-userItem">
-                        <img src="##" class="js-preview-img" data-src="~/Images/business/PlayPai.jpg" />
+                        <img src="##" class="js-preview-img" data-src="../Images/business/PlayPai.jpg" />
                         <i class="login-user-mask"></i>
                         <a class="login-user-target" href="/2487780" target="_blank"></a>
                         <div class="login-user-info">
@@ -153,7 +156,7 @@
                     <a class="login-btn-app" href="/app" target="_blank" data-log="login_app"><em class="icon-download"></em><span>下载手机版</span></a>
                 </div>
                 <p class="login-footer-copyright">
-                    <span>永恒公司版权所有　©1997-2014　@小胡子ICP备20090191号</span>
+                    <span>永恒公司版权所有　©1997-2014　@@小胡子ICP备20090191号</span>
                     <a href="mailto:969502899@qq.com">联系我们</a>
                     <a href="##" target="_blank">吃货动态</a>
                     <a href="##" target="_blank">友情链接</a>
@@ -170,7 +173,7 @@
                                 <a class="js-register" target="_blank" href="">没有通行证？开通&gt;&gt;</a>
                                 <p class="form-notice">永恒通行证可以直接登录开通</p>
                             </div>
-                            <form data-log="ursLogin" action="##" method="POST" id="loginForm" name="loginForm" autocomplete="off" target="_self">
+                            <form data-log="ursLogin" action="" method="POST" id="loginForm" name="loginForm" autocomplete="off" target="_self">
                                 <div>
                                     <ul class="login-box">
                                         <li class="login-error">
@@ -224,7 +227,6 @@
         </div>
     </div>
     <script src="~/Scripts/Login/common.js"></script>
-    <script src="~/Scripts/Login/login.js"></script>
-
+    <script src="~/Scripts/Login/login.js" data-main="page/login"></script>
 </body>
 </html> 
