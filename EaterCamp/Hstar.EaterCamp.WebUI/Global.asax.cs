@@ -26,7 +26,7 @@ namespace Hstar.EaterCamp.WebUI
             /**********系统初始化**********/
             var basePath = Server.MapPath("~/");
             //初始化Autofac容器
-            //AutofacHelper.InitAutofacContainer(Path.Combine(basePath, "Config/Autofac/AutofacConfig.xml"));
+            AutofacHelper.InitAutofacContainer(Path.Combine(basePath, "Config/Autofac/AutofacConfig.xml"));
             //初始化iBatis.Net
             SqlMapperHelper.InitMapper();
         }
