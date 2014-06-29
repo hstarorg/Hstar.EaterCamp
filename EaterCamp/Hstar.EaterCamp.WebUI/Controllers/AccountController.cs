@@ -1,5 +1,4 @@
 ﻿using Hstar.EaterCamp.IBLL;
-using Hstar.EaterCamp.Models.Account;
 using Hstar.Framework.Ioc;
 using Microsoft.Web.WebPages.OAuth;
 using System.Threading.Tasks;
@@ -31,15 +30,7 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             ViewBag.Test = accountBll.GetTest();
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
-        //验证用户
-        public ActionResult CheckLogin(UserAccount userInfo)
-        {
-            if (userInfo.UserName == "")
-            {
-                
-            }
-            return null;
-        }
+
         #endregion 登录
 
         #region 帮助程序

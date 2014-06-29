@@ -17,17 +17,13 @@ namespace Hstar.EaterCamp.WebUI
                 "~/Scripts/Plugins/bootstrap/css/bootstrap.css",
                 "~/Scripts/Plugins/bootstrap/css/bootstrap-theme.css"));
 
-            //非入侵式验证和ajax
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                        "~/Scripts/Plugins/jQueryUI/jquery-ui-{version}.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/Plugins/jQueryValidate/jquery.validate*",
                 "~/Scripts/Plugins/jQueryValidate/jquery.unobtrusive*",
                 "~/Scripts/Plugins/jQueryAjax/jquery.unobtrusive*"));
-
-            //全局样式和
-            bundles.Add(new StyleBundle("~/Content/global").Include("~/Content/global.css"));
-
-            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                       "~/Scripts/Plugins/jQueryUI/jquery-ui-{version}.js"));
 
             // 使用 Modernizr 的开发版本进行开发和了解信息。然后，当你做好
             // 生产准备时，请使用 http://modernizr.com 上的生成工具来仅选择所需的测试。
