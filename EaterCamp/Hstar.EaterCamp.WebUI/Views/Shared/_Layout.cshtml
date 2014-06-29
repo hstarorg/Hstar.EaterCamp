@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 吃货集中营</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    @Styles.Render("~/Scripts/Plugins/bootstrap/css/css")
+    @Styles.Render("~/Scripts/Plugins/bootstrap/css/css", "~/Content/global")
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="~/Scripts/Plugins/Html5/html5shiv.min.js"></script>
@@ -24,19 +24,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand hidden-sm" href="/">吃货集中营</a>
+                    <a class="navbar-brand hidden-sm" href="/">吃货</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="/">首页</a></li>
+                    <ul class="nav navbar-nav" id="menu_bar">
+                        <li class="active">@Html.ActionLink("首页", "Index", "Home")</li>
                         <li>
-                            <a href="javascript:void(0)">发起活动</a>
+                            @Html.ActionLink("发起活动", "CreateParty", "Home")
                         </li>
-                        <li>
-                            <a href="javascript:void(0)">参加活动</a>
-                        </li>
-                        <li><a href="/p/lesscss/" target="_blank">个人空间</a></li>
-                        <li><a href="about.html">关于</a></li>
+                        <li><a href="#">个人空间</a></li>
+                        <li><a href="#">关于</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><button class="btn btn-danger btn-xs" style="margin: 15px 5px;">加入吃货</button></li>
@@ -53,13 +50,13 @@
         </section>
     </div>
     <footer>
-        <div>
-            <p>
-                底部
+        <div class="container">
+            <p id="copyright">
+                版权所有 &copy; 蜀ICP 20130600036
             </p>
         </div>
     </footer>
-    @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/Scripts/SysCommon.js")
     @RenderSection("FootPartialSection", false)
 </body>
 </html>

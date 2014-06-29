@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Hstar.Framework.IBatis4Net;
-using Hstar.EaterCamp.Models.Account;
+﻿using System.Web.Mvc;
 
 namespace Hstar.EaterCamp.WebUI.Controllers
 {
@@ -14,6 +8,16 @@ namespace Hstar.EaterCamp.WebUI.Controllers
         {
             ViewBag.Message = "修改此模板以快速启动你的 ASP.NET MVC 应用程序。";
 
+            return View();
+        }
+
+        /// <summary>
+        /// 发起聚会
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult CreateParty()
+        {
             return View();
         }
 
