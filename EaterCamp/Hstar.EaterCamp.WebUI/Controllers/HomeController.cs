@@ -11,6 +11,16 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 发起聚会
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult CreateParty()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "你的应用程序说明页。";

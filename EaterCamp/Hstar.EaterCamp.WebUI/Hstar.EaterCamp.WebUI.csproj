@@ -176,6 +176,7 @@
     <Content Include="Config\SqlMap\Account.xml" />
     <Content Include="Config\SqlMap\Common.xml" />
     <Content Include="Config\SqlMap\Home.xml" />
+    <Content Include="Content\global.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -246,6 +247,8 @@
     <Content Include="Images\login\login.png" />
     <Content Include="Images\login\login_logo_v130808.png" />
     <Content Include="Images\login\login_logo_v1308081.png" />
+    <Content Include="Scripts\Home\CreateParty.js" />
+    <Content Include="Scripts\SysCommon.js" />
     <Content Include="Style\hacks.css" />
     <Content Include="Style\main.min.css" />
     <Content Include="Style\page.min.css" />
@@ -329,6 +332,7 @@
     <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\Home\CreateParty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
