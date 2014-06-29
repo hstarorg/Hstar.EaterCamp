@@ -162,8 +162,7 @@ define("lib/jquery",
     }, checkPasswordEmpty: function () { var a = this.$password.val(); a !== "" ? this.$passwordLabel.hide() : this.$passwordLabel.show();
     }, getData: function () { this.username = d.trim(this.$username.val()), this.password = d.trim(this.$password.val()); }, onCheckVals: function () { if (this.username === "") { g.textTips(this.$tips, "error", "\u901a\u884c\u8bc1\u6216\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a"), this.$username.focus(); return !1;
                                                                                                                                                         } if (this.password === "") { g.textTips(this.$tips, "error", "\u901a\u884c\u8bc1\u6216\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a"), this.$password.focus(); return !1;
-                                                                                                                                                          } if (!this.username.match(g.EMAIL_REG) && !this.username.match(g.MOBILE_REG)) { g.textTips(this.$tips, "error", "\u901a\u884c\u8bc1\u7684\u683c\u5f0f\u4e0d\u5bf9"); return !1;
-                                                                                                                                                            } return !0;
+                                                                                                                                                          }return !0;
     }, hideTips: function () { g.textTips(this.$tips, "hide"); }
 }); return n;
     }); typeof process != "undefined" && (process.title === "node" || process.title === "grunt") && (define = function (a) { exports.formatTemplate = a().formatTemplate, exports.replaceString = a().replaceString; }), define("utils/tmpl", function (a, b, c) { function n(a, b) { b = b || {}; if (typeof a == "function") return a(b); return m(a, b);
