@@ -31,6 +31,11 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
 
+        public ActionResult CheckUser(string userName,string userPwd)
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
         #endregion 登录
 
         #region 帮助程序

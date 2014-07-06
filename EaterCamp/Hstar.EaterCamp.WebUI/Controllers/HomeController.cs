@@ -20,7 +20,24 @@ namespace Hstar.EaterCamp.WebUI.Controllers
         {
             return View();
         }
-
+         /// <summary>
+        /// 活动追踪
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult PartyShow()
+        {
+            return View();
+        }
+        /// <summary>
+        /// 吃货
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Easter()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "你的应用程序说明页。";

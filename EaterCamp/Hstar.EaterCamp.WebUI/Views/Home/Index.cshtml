@@ -1,11 +1,20 @@
 ﻿@{
     ViewBag.Title = "主页";
 }
+@section FootPartialSection
+{
+    <script>
+        SysCommon.changeActiveMenu(0);
+    </script>
+}
 <div style="height: 200px;background: lightcoral;">
     当前热门活动
 </div>
 <div style="height: 200px;background: lightgreen">
     进行中的活动
+</div>
+<div style="height: 200px;background: lightgray">
+    往期活动回顾
 </div>
 <div style="height: 200px;background: lightgray">
     往期活动回顾
