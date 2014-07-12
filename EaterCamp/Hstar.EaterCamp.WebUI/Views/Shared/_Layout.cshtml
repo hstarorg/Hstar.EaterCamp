@@ -41,8 +41,20 @@
                         <li><a href="#">关于</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            @if (Request.IsAuthenticated)
+                            {
+                                var user = (Hstar.EaterCamp.Models.Account.UserAccount)Session["UserInfo"];
+                                <a class="navbar-brand hidden-sm" href="##">
+                                    @user.UserName
+                                </a>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary btn-xs" style="margin: 15px 5px;" onclick="location.href='/Account/Login'">登录</button>
+                            }
+                        </li>
                         <li><button class="btn btn-danger btn-xs" style="margin: 15px 5px;">加入吃货</button></li>
-                        <li><button class="btn btn-primary btn-xs" style="margin: 15px 5px;" onclick="location.href='/Account/Login'">登录</button></li>
                     </ul>
                 </div>
             </div>
