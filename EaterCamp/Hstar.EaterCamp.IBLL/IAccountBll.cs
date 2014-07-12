@@ -1,7 +1,9 @@
-﻿namespace Hstar.EaterCamp.IBLL
+﻿using Hstar.EaterCamp.Models.Account;
+
+namespace Hstar.EaterCamp.IBLL
 {
     public interface IAccountBll
     {
-        string GetTest();
+        UserAccount LoginCheck(UserAccount user);
     }
 }

@@ -42,6 +42,12 @@
     <Compile Include="IAccountBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hstar.EaterCamp.Models\Hstar.EaterCamp.Models.csproj">
+      <Project>{367b6f6a-cde8-4a48-93a7-3ef2c51aa7db}</Project>
+      <Name>Hstar.EaterCamp.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

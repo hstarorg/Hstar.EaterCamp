@@ -1,5 +1,6 @@
 ﻿using Hstar.EaterCamp.IBLL;
 using Hstar.EaterCamp.IDAL;
+using Hstar.EaterCamp.Models.Account;
 using Hstar.Framework.Ioc;
 
 namespace Hstar.EaterCamp.BLL
@@ -13,9 +14,11 @@ namespace Hstar.EaterCamp.BLL
             accountDal = AutofacHelper.GetInstance<IAccountDal>();
         }
 
-        public string GetTest()
+
+
+        public UserAccount LoginCheck(UserAccount user)
         {
-            return accountDal.GetTest();
+           return accountDal.LoginCheck(user);
         }
     }
 }

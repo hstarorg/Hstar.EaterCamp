@@ -3,10 +3,8 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!--配置你的实体类的别名，一般的都是一个实体类对应一个xml-->
   <statements>
-    <select id="test1111" resultClass="int">
-      <![CDATA[
-       SELECT COUNT(0) FROM V3Users
-      ]]>
+    <select id="ac_LoginCheck" resultClass="Hstar.EaterCamp.Models.Account.UserAccount" parameterClass="Hstar.EaterCamp.Models.Account.UserAccount">
+      select *  from Sys_UserAccount where UserName=#UserName# and Password=#Password#
     </select>
   </statements>
 </sqlMap>

@@ -1,4 +1,5 @@
 ﻿using Hstar.EaterCamp.IBLL;
+using Hstar.EaterCamp.Models.Account;
 using Hstar.Framework.Ioc;
 using Microsoft.Web.WebPages.OAuth;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             accountBll = AutofacHelper.GetInstance<IAccountBll>();
         }
 
-        #region 登录
+        #region 登录  登出
 
         /// <summary>
         /// 登录页面
@@ -27,13 +28,35 @@ namespace Hstar.EaterCamp.WebUI.Controllers
         [HttpGet]
         public Task<ActionResult> Login()
         {
-            ViewBag.Test = accountBll.GetTest();
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
 
-        public ActionResult CheckUser(string userName,string userPwd)
+        [HttpPost]
+        public ActionResult Login(UserAccount user)
         {
-            return RedirectToAction("Index", "Home");
+            if (!string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Password))
+            {
+                var userDbEntity = accountBll.LoginCheck(user);
+                if (userDbEntity != null)
+                {
+                    Session["UserInfo"] = userDbEntity;
+                    ViewBag.UserName = user.UserName;
+                    FormsAuthentication.SetAuthCookie(user.UserName, true);
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("LogError","用户名或密码错误");
+                return  View();
+            }
+            ModelState.AddModelError("LogError", "用户名或密码不能为空！");
+            return View();
+        }
+
+
+        //登出
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Account", "Login");
         }
 
         #endregion 登录

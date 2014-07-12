@@ -1,6 +1,6 @@
 ﻿@model Hstar.EaterCamp.Models.Account.UserAccount
 @{
-    Layout=null;
+    Layout = null;
 }
 <!--[if IE 9]><html class="ie9"><![endif]-->
 <!--[if IE 8]><html class="ie8"><![endif]-->
@@ -173,10 +173,11 @@
                                 <a class="js-register" target="_blank" href="">没有通行证？开通&gt;&gt;</a>
                                 <p class="form-notice">永恒通行证可以直接登录开通</p>
                             </div>
-                            <form data-log="ursLogin" action="CheckUser" method="POST" id="loginForm" name="loginForm" autocomplete="off" target="_self">
+                            <form data-log="ursLogin" action="Login" method="POST" id="loginForm" name="loginForm" autocomplete="off" target="_self">
                                 <div>
                                     <ul class="login-box">
                                         <li class="login-error">
+                                            @Html.ValidationMessage("LogError") 
                                             <span class="text-icon-tips js-tips hidden"></span>
                                         </li>
                                         <li class="login-input js-row">
