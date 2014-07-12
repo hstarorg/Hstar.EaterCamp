@@ -31,9 +31,18 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
 
-        public ActionResult CheckUser(string userName,string userPwd)
+        public ActionResult CheckUser(string userName, string userPwd)
         {
             return RedirectToAction("Index", "Home");
+        }
+
+        /// <summary>
+        /// 首页使用，判断登录状态，未登录，显示登录页面；已登录，显示用户信息
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult LoginOrUserInfo()
+        {
+            return View("PartialLogin");
         }
 
         #endregion 登录
