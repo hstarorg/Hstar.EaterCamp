@@ -30,8 +30,8 @@ namespace Hstar.EaterCamp.WebUI.Controllers
         {
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
-        [HttpPost]
-        public ActionResult Login(UserAccount user)
+
+        public string Login(UserAccount user)
         {
             if (!string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Password))
             {
@@ -41,13 +41,11 @@ namespace Hstar.EaterCamp.WebUI.Controllers
                     Session["UserInfo"] = userDbEntity;
                     ViewBag.UserName = user.UserName;
                     FormsAuthentication.SetAuthCookie(user.UserName, true);
-                    return RedirectToAction("Index", "Home");
+                    return "<script>window.parent.location.href='../home/index';</script>";
                 }
-                ModelState.AddModelError("LogError","用户名或密码错误");
-                return  View();
+                return "<script>alert('用户名或密码不正确!')</script>";
             }
-            ModelState.AddModelError("LogError", "用户名或密码不能为空！");
-            return View();
+            return "<script>alert('用户名和密码不能为空！')</script>";
         }
 
 
