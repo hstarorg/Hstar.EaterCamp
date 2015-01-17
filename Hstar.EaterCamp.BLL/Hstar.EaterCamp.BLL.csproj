@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{367B6F6A-CDE8-4A48-93A7-3EF2C51AA7DB}</ProjectGuid>
+    <ProjectGuid>{11F8331B-105D-4F0E-8E12-783A8E51ECEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hstar.EaterCamp.Models</RootNamespace>
-    <AssemblyName>Hstar.EaterCamp.Models</AssemblyName>
+    <RootNamespace>Hstar.EaterCamp.BLL</RootNamespace>
+    <AssemblyName>Hstar.EaterCamp.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,18 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\CSharp-Framework\Hstar.Framework\Hstar.Framework.csproj">
-      <Project>{4287384d-4f41-4528-8c16-dc9ef33be669}</Project>
-      <Name>Hstar.Framework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hstar.EaterCamp.Resources\Hstar.EaterCamp.Resources.csproj">
-      <Project>{dda5698c-3b68-423c-8bd8-8ac5abb4b4ca}</Project>
-      <Name>Hstar.EaterCamp.Resources</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

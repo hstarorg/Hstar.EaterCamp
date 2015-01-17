@@ -1,10 +1,9 @@
-﻿using Hstar.Framework.IBatis4Net;
-using Hstar.Framework.Ioc;
-using System.IO;
+﻿using Hstar.EaterCamp.Core;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Hstar.EaterCamp.DAL;
 
 namespace Hstar.EaterCamp.WebUI
 {
@@ -25,8 +24,7 @@ namespace Hstar.EaterCamp.WebUI
 
             /**********系统初始化**********/
             var basePath = Server.MapPath("~/");
-            //初始化Autofac容器
-            AutofacHelper.InitAutofacContainer(Path.Combine(basePath, "Config/Autofac/AutofacConfig.xml"));
+            StartupConfig.StartUp(basePath);
             //初始化iBatis.Net
             SqlMapperHelper.InitMapper();
         }

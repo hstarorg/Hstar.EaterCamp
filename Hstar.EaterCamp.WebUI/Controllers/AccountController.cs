@@ -1,7 +1,4 @@
-﻿using Hstar.EaterCamp.IBLL;
-using Hstar.EaterCamp.Models.Account;
-using Hstar.Framework.Ioc;
-using Microsoft.Web.WebPages.OAuth;
+﻿using Microsoft.Web.WebPages.OAuth;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -12,11 +9,9 @@ namespace Hstar.EaterCamp.WebUI.Controllers
     //[InitializeSimpleMembership]
     public class AccountController : BaseController
     {
-        private readonly IAccountBll accountBll;
-
         public AccountController()
         {
-            accountBll = AutofacHelper.GetInstance<IAccountBll>();
+            
         }
 
         #region 登录  登出
@@ -31,20 +26,20 @@ namespace Hstar.EaterCamp.WebUI.Controllers
             return Task.Factory.StartNew(() => { }).ContinueWith<ActionResult>(x => View());
         }
 
-        public string Login(UserAccount user)
+        public string Login(string user)
         {
-            if (!string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Password))
-            {
-                var userDbEntity = accountBll.LoginCheck(user);
-                if (userDbEntity != null)
-                {
-                    Session["UserInfo"] = userDbEntity;
-                    ViewBag.UserName = user.UserName;
-                    FormsAuthentication.SetAuthCookie(user.UserName, true);
-                    return "<script>window.parent.location.href='../home/index';</script>";
-                }
-                return "<script>alert('用户名或密码不正确!')</script>";
-            }
+            //if (!string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Password))
+            //{
+            //    var userDbEntity = accountBll.LoginCheck(user);
+            //    if (userDbEntity != null)
+            //    {
+            //        Session["UserInfo"] = userDbEntity;
+            //        ViewBag.UserName = user.UserName;
+            //        FormsAuthentication.SetAuthCookie(user.UserName, true);
+            //        return "<script>window.parent.location.href='../home/index';</script>";
+            //    }
+            //    return "<script>alert('用户名或密码不正确!')</script>";
+            //}
             return "<script>alert('用户名和密码不能为空！')</script>";
         }
 
