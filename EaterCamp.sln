@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-测试类项目", "3-测试类项目", "{6D274A89-7F27-4918-849E-C8F76F47FD97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-业务类项目", "1-业务类项目", "{7BFDFD0C-5864-471D-B7BD-705E3BBE078F}"
@@ -24,6 +26,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.EaterCamp.Core", "Hstar.EaterCamp.Core\Hstar.EaterCamp.Core.csproj", "{717B0ADA-E2D0-4956-BF6F-6F0A774EC81A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Core", "..\Hstar.Core\Hstar.Core\Hstar.Core.csproj", "{41B888C1-6DE4-4A3B-9BA5-EB85C7D28CC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{14C46E69-5523-4439-BF95-31D03D15D37C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,8 +67,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
 		{B2BC71E4-8C73-4C25-9E02-924FCDC4E04A} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
+		{5E265A77-9AAE-4187-B3BC-9D97C4F8A61C} = {6D274A89-7F27-4918-849E-C8F76F47FD97}
 		{11F8331B-105D-4F0E-8E12-783A8E51ECEB} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
 		{BF4C42C5-2D24-4D57-A14C-9D4A106D1800} = {7BFDFD0C-5864-471D-B7BD-705E3BBE078F}
 		{717B0ADA-E2D0-4956-BF6F-6F0A774EC81A} = {0FE1FEE8-FEE2-4D0E-9CC4-615E0C03C94C}
