@@ -12,6 +12,9 @@ namespace Hstar.EaterCamp.Core
            var autofacProvider = new AutofacProvider();
            autofacProvider.InitAutofacContainer(Path.Combine(basePath, "Config/Autofac/AutofacConfig.xml"));
            IocHelper.SetIocProvider(autofacProvider);
+
+           //初始化iBatis.Net
+           SqlMapperHelper.InitMapper();
        }
     }
 }

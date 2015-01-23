@@ -165,6 +165,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -231,24 +232,16 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\npm.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Images\banner\banner1.png" />
-    <Content Include="Images\business\barbecue.jpg" />
-    <Content Include="Images\business\chicken.jpg" />
-    <Content Include="Images\business\EatingFlish.jpg" />
-    <Content Include="Images\business\PlayBasketball.jpg" />
-    <Content Include="Images\business\PlayPai.jpg" />
-    <Content Include="Images\business\PlaySong.jpg" />
-    <Content Include="Images\business\visitMuseum.jpg" />
-    <Content Include="Images\business\WalkPlay.jpg" />
-    <Content Include="Images\home\cat_pic1.png" />
-    <Content Include="Images\icon\icon_v140619.png" />
-    <Content Include="Images\login\bg_v130808.jpg" />
-    <Content Include="Images\login\btn_v140403.png" />
-    <Content Include="Images\login\login.png" />
-    <Content Include="Images\login\login_logo_v130808.png" />
-    <Content Include="Images\login\login_logo_v1308081.png" />
     <Content Include="Scripts\Home\CreateParty.js" />
     <Content Include="Scripts\SysCommon.js" />
     <Content Include="Style\hacks.css" />
@@ -270,6 +263,12 @@
     <None Include="Config\SqlMap\SqlMapConfig.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\Plugins\jQueryValidate\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.min.js" />
@@ -299,19 +298,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -338,15 +324,19 @@
     <Content Include="Views\Home\PartyShow.cshtml" />
     <Content Include="Views\Home\Easter.cshtml" />
     <Content Include="Views\Account\PartialLogin.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Images\tips\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Hstar.Core\Hstar.Core\Hstar.Core.csproj">
+      <Project>{41b888c1-6de4-4a3b-9ba5-eb85c7d28cc4}</Project>
+      <Name>Hstar.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hstar.EaterCamp.BLL\Hstar.EaterCamp.BLL.csproj">
       <Project>{11f8331b-105d-4f0e-8e12-783a8e51eceb}</Project>
       <Name>Hstar.EaterCamp.BLL</Name>
@@ -354,10 +344,6 @@
     <ProjectReference Include="..\Hstar.EaterCamp.Core\Hstar.EaterCamp.Core.csproj">
       <Project>{717b0ada-e2d0-4956-bf6f-6f0a774ec81a}</Project>
       <Name>Hstar.EaterCamp.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hstar.EaterCamp.DAL\Hstar.EaterCamp.DAL.csproj">
-      <Project>{bf4c42c5-2d24-4d57-a14c-9d4a106d1800}</Project>
-      <Name>Hstar.EaterCamp.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

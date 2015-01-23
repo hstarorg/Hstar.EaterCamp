@@ -2,7 +2,7 @@
 <autofac>
   <components>
     <!--【业务逻辑层依赖注入】-->
-    <!--<component type="Hstar.EaterCamp.BLL.AccountBll,Hstar.EaterCamp.BLL" service="Hstar.EaterCamp.IBLL.IAccountBll,Hstar.EaterCamp.IBLL" />-->
+    <component type="Hstar.EaterCamp.BLL.UserBiz,Hstar.EaterCamp.BLL" service="Hstar.EaterCamp.BLL.UserBiz,Hstar.EaterCamp.BLL" />
     <!--【数据访问层依赖注入】-->
     <!--<component type="Hstar.EaterCamp.DAL.AccountDal,Hstar.EaterCamp.DAL" service="Hstar.EaterCamp.IDAL.IAccountDal,Hstar.EaterCamp.IDAL" />-->
   </components>

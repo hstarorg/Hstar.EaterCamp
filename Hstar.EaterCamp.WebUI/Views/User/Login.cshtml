@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "title";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>吃货 - 吃尽天下美食</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://htmlstream.com/preview/unify-v1.6-production/favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="http://htmlstream.com/preview/unify-v1.6-production/assets/css/style.css" rel="stylesheet" />
+
+    <!-- CSS Implementing Plugins -->
+    <link href="~/Content/styles/line-icons.css" rel="stylesheet" />
+    <link href="~/Content/styles/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- CSS Page Style -->
+    <link href="~/Content/styles/page_log_reg_v2.css" rel="stylesheet" />
+
+    <!-- CSS Theme -->
+
+    <!-- CSS Customization -->
+    <link href="~/Content/styles/login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--=== Content Part ===-->
+    <div class="container">
+        <!--Reg Block-->
+        <div class="reg-block">
+            <div class="reg-block-header">
+                <h2>Sign In</h2>
+                <ul class="social-icons text-center">
+                    <li><a class="rounded-x social_facebook" data-original-title="Facebook" href="http://htmlstream.com/preview/unify-v1.6-production/page_login1.html#"></a></li>
+                    <li><a class="rounded-x social_twitter" data-original-title="Twitter" href="http://htmlstream.com/preview/unify-v1.6-production/page_login1.html#"></a></li>
+                    <li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="http://htmlstream.com/preview/unify-v1.6-production/page_login1.html#"></a></li>
+                    <li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="http://htmlstream.com/preview/unify-v1.6-production/page_login1.html#"></a></li>
+                </ul>
+                <p>Don't Have Account? Click <a class="color-green" href="~/User/Register">Sign Up</a> to registration.</p>
+            </div>
+
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="text" class="form-control" placeholder="Password">
+            </div>
+            <hr>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">
+                    <p>Always stay signed in</p>
+                </label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <button type="submit" class="btn-u btn-block">Log In</button>
+                </div>
+            </div>
+        </div>
+        <!--End Reg Block-->
+    </div>
+    <!--/container-->
+    <!--=== End Content Part ===-->
+
+    <!-- JS Global Compulsory -->
+    <script src="~/Content/vendor/jquery/jquery-1.11.2.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="~/Content/js/user/back-to-top.js"></script>
+    <script src="~/Content/js/user/jquery.countdown.js"></script>
+    <script src="~/Content/vendor/jquery-backstretch/jquery.backstretch.js"></script>
+    <script type="text/javascript">
+        $.backstretch([
+            '/Content/images/1.jpg',
+            '/Content/images/2.jpg',
+            '/Content/images/3.jpg'
+        ], {
+            fade: 1000,
+            duration: 1000
+        });
+    </script>
+    <!-- JS Page Level -->
+    <script src="~/Content/js/user/app.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <!--[if lt IE 9]>
+            <script src="assets/plugins/respond.js"></script>
+            <script src="assets/plugins/html5shiv.js"></script>
+            <script src="assets/js/plugins/placeholder-IE-fixes.js"></script>
+    <![endif]-->
+
+    @*<script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29166220-1']);
+        _gaq.push(['_setDomainName', 'htmlstream.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>*@
+
+
+    <div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;"></div>
+</body>
+</html>
