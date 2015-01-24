@@ -178,6 +178,20 @@
     <Content Include="Config\SqlMap\Common.xml" />
     <Content Include="Config\SqlMap\Home.xml" />
     <Content Include="Content\global.css" />
+    <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\2.jpg" />
+    <Content Include="Content\images\3.jpg" />
+    <Content Include="Content\images\4.jpg" />
+    <Content Include="Content\js\user\app.js" />
+    <Content Include="Content\js\user\back-to-top.js" />
+    <Content Include="Content\js\user\jquery.backstretch.min.js" />
+    <Content Include="Content\js\user\jquery.countdown.js" />
+    <Content Include="Content\styles\dark.css" />
+    <Content Include="Content\styles\font-awesome.min.css" />
+    <Content Include="Content\styles\line-icons.css" />
+    <Content Include="Content\styles\login.css" />
+    <Content Include="Content\styles\page_log_reg_v2.css" />
+    <Content Include="Content\styles\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -240,6 +254,10 @@
     <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
     <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\vendor\bootstrap\js\npm.js" />
+    <Content Include="Content\vendor\jquery-backstretch\jquery.backstretch.js" />
+    <Content Include="Content\vendor\jquery-backstretch\jquery.backstretch.min.js" />
+    <Content Include="Content\vendor\jquery\jquery-1.11.2.js" />
+    <Content Include="Content\vendor\jquery\jquery-1.11.2.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Home\CreateParty.js" />
@@ -269,6 +287,9 @@
     <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\vendor\jquery\jquery-1.11.2.min.map" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <None Include="Scripts\Plugins\jQueryValidate\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\Plugins\jQueryUI\jquery-ui-1.8.20.min.js" />
@@ -327,6 +348,7 @@
     <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\vendor\unify\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
