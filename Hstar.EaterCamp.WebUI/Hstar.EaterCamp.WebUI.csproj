@@ -4151,6 +4151,12 @@
   <ItemGroup>
     <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hstar.EaterCamp.BLL\Hstar.EaterCamp.BLL.csproj">
+      <Project>{11f8331b-105d-4f0e-8e12-783a8e51eceb}</Project>
+      <Name>Hstar.EaterCamp.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

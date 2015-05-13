@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Hstar.EaterCamp.WebUI.Annotations;
+﻿using System.Web.Mvc;
 
 namespace Hstar.EaterCamp.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+       
+        public HomeController()
+        {
+            
+        }
         [HttpGet]
         public ActionResult Index()
         {
