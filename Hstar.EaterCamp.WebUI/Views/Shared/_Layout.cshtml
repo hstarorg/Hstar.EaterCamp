@@ -1,78 +1,287 @@
 ﻿<!DOCTYPE html>
-<html lang="zh">
+<!--[if IE 8]> <html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8" />
+    <title>@(ViewBag.Title ?? "吃货，让美食充满生活")</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - 吃货集中营</title>
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    @Styles.Render("~/Scripts/Plugins/bootstrap/css/css", "~/Content/global")
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="~/Scripts/Plugins/Html5/html5shiv.min.js"></script>
-    <script src="~/Scripts/Plugins/Html5/respond.min.js"></script>
-    <![endif]-->
-    @RenderSection("HeadPartialSection", false)
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="~/Assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="~/Assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="~/Assets/css/footers/footer-v1.css">
+
+    @RenderSection("styles", false)
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="~/Assets/plugins/animate.css">
+    <link rel="stylesheet" href="~/Assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="~/Assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/Assets/plugins/layer-slider/layerslider/css/layerslider.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="~/assets/css/custom.css">
 </head>
-<body>
-    <header>
-        <div class="navbar navbar-default navbar-fixed-top">
+
+<body class="header-fixed boxed-layout container">
+    <div class="wrapper">
+        <!--=== Header ===-->
+        <div class="header header-sticky">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <!-- Logo -->
+                <a class="logo" href="/">
+                    <img src="~/Assets/img/logo1-default.png" alt="Logo">
+                </a>
+                <!-- End Logo -->
+                <!-- Topbar -->
+                <div class="topbar">
+                    <ul class="loginbar pull-right">
+                        <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                        <li class="topbar-devider"></li>
+                        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                    </ul>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav" id="menu_bar">
+                <!-- End Topbar -->
+
+                <!-- Toggle get grouped for better mobile display -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!-- End Toggle -->
+            </div>
+            <!--/end container-->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                <div class="container">
+                    <ul class="nav navbar-nav">
                         <li class="active">
-                            @Html.ActionLink("首页", "Index", "Home")
-                        </li>
-                        <li>@Html.ActionLink("吃货", "Easter", "Home")</li>
-                        <li>
-                            @Html.ActionLink("发起活动", "CreateParty", "Home")
+                            @Html.ActionLink("Home", "Index", "Home")
                         </li>
                         <li>
-                            @Html.ActionLink("活动追踪", "PartyShow", "Home")
+                            <a href="javascript:void(0);">聚会广场</a>
                         </li>
-                        <li><a href="#">个人空间</a></li>
-                        <li><a href="#">关于</a></li>
+                        <li>
+                            <a href="javascript:void(0);">我的聚会</a>
+                        </li>
+                        <li>
+                            @Html.ActionLink("About", "About", "Home")
+                        </li>
+                        <li>
+                            <i class="search fa fa-search search-btn"></i>
+                            <div class="search-open">
+                                <div class="input-group animated fadeInDown">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn-u" type="button">Go</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            @if (Request.IsAuthenticated)
-                            {
-                                <a class="navbar-brand hidden-sm" href="##">
-                                    Jay.M.Hu
-                                </a>
-                            }
-                            else
-                            {
-                                <button class="btn btn-primary btn-xs" style="margin: 15px 5px;" onclick="location.href='/Account/Login'">登录</button>
-                            }
-                        </li>
-                        <li><button class="btn btn-danger btn-xs" style="margin: 15px 5px;">加入吃货</button></li>
-                    </ul>
+                </div>
+                <!--/end container-->
+            </div>
+            <!--/navbar-collapse-->
+        </div>
+        <!--=== End Header ===-->
+
+        @RenderBody()
+
+        <!--=== Footer Version 1 ===-->
+        <div class="footer-v1">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <a href="index.html">
+                                <img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+                            <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                            <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+                        </div>
+                        <!--/col-md-3-->
+                        <!-- End About -->
+
+                        <!-- Latest -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <div class="posts">
+                                <div class="headline">
+                                    <h2>Latest Posts</h2>
+                                </div>
+                                <ul class="list-unstyled latest-list">
+                                    <li>
+                                        <a href="#">Incredible content</a>
+                                        <small>May 8, 2014</small>
+                                    </li>
+                                    <li>
+                                        <a href="#">Best shoots</a>
+                                        <small>June 23, 2014</small>
+                                    </li>
+                                    <li>
+                                        <a href="#">New Terms and Conditions</a>
+                                        <small>September 15, 2014</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/col-md-3-->
+                        <!-- End Latest -->
+
+                        <!-- Link List -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <div class="headline">
+                                <h2>Useful Links</h2>
+                            </div>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
+                        <!--/col-md-3-->
+                        <!-- End Link List -->
+
+                        <!-- Address -->
+                        <div class="col-md-3 map-img md-margin-bottom-40">
+                            <div class="headline">
+                                <h2>Contact Us</h2>
+                            </div>
+                            <address class="md-margin-bottom-40">
+                                25, Lorem Lis Street, Orange
+                                <br />
+                                California, US
+                                <br />
+                                Phone: 800 123 3456
+                                <br />
+                                Fax: 800 123 3456
+                                <br />
+                                Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                            </address>
+                        </div>
+                        <!--/col-md-3-->
+                        <!-- End Address -->
+                    </div>
                 </div>
             </div>
+            <!--/footer-->
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                2015 &copy; All Rights Reserved.
+                           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="col-md-6">
+                            <ul class="footer-socials list-inline">
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                        <i class="fa fa-pinterest"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                        <i class="fa fa-dribbble"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social Links -->
+                    </div>
+                </div>
+            </div>
+            <!--/copyright-->
         </div>
-    </header>
-    <div id="body" class="container">
-        @RenderSection("featured", false)
-        <section class="content-wrapper main-content clear-fix">
-            @RenderBody()
-        </section>
+        <!--=== End Footer Version 1 ===-->
     </div>
-    <footer>
-        <div class="container">
-            <p id="copyright">
-                版权所有 &copy; 蜀ICP 20130600036
-            </p>
-        </div>
-    </footer>
-    @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/Scripts/SysCommon.js")
-    @RenderSection("FootPartialSection", false)
+    <!--/wrapper-->
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="~/Assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="~/Assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/layer-slider/layerslider/js/greensock.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="~/Assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="~/Assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="~/Assets/js/app.js"></script>
+    <script type="text/javascript" src="~/Assets/js/plugins/owl-carousel.js"></script>
+    <script type="text/javascript" src="~/Assets/js/plugins/layer-slider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            App.init();
+            OwlCarousel.initOwlCarousel();
+            LayerSlider.initLayerSlider();
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="~/Assets/plugins/respond.js"></script>
+    <script src="~/Assets/plugins/html5shiv.js"></script>
+    <script src="~/Assets/plugins/placeholder-IE-fixes.js"></script>
+    <![endif]-->
+
+    <!-- For Background Image -->
+    <script type="text/javascript" src="~/Assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+        $.backstretch([
+          "/Assets/img/bg/13.jpg"
+        ])
+    </script>
+    <!-- End For Background Image -->
+    @RenderSection("scripts", false)
 </body>
 </html>

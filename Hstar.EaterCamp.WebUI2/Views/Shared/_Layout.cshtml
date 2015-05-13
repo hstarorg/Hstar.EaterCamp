@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 吃货集中营</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Scripts/Plugins/bootstrap/css/css", "~/Content/global")
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="~/Scripts/Plugins/Html5/html5shiv.min.js"></script>
+    <script src="~/Scripts/Plugins/Html5/respond.min.js"></script>
+    <![endif]-->
+    @RenderSection("HeadPartialSection", false)
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="menu_bar">
+                        <li class="active">
+                            @Html.ActionLink("首页", "Index", "Home")
+                        </li>
+                        <li>@Html.ActionLink("吃货", "Easter", "Home")</li>
+                        <li>
+                            @Html.ActionLink("发起活动", "CreateParty", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("活动追踪", "PartyShow", "Home")
+                        </li>
+                        <li><a href="#">个人空间</a></li>
+                        <li><a href="#">关于</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            @if (Request.IsAuthenticated)
+                            {
+                                <a class="navbar-brand hidden-sm" href="##">
+                                    Jay.M.Hu
+                                </a>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary btn-xs" style="margin: 15px 5px;" onclick="location.href='/Account/Login'">登录</button>
+                            }
+                        </li>
+                        <li><button class="btn btn-danger btn-xs" style="margin: 15px 5px;">加入吃货</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="body" class="container">
+        @RenderSection("featured", false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p id="copyright">
+                版权所有 &copy; 蜀ICP 20130600036
+            </p>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/Scripts/SysCommon.js")
+    @RenderSection("FootPartialSection", false)
+</body>
+</html>
